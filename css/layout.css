@@ -1,0 +1,89 @@
+/* RESET All ELEMENT */
+html, body, div, span, table, caption, tbody, tfoot, thead, tr, th, td, font, img, small, strong, sub, sup, p, a, dl, dt, dd, ol, ul, li, form, label { vertical-align: baseline; font-family: inherit; font-weight: inherit; font-style: inherit; font-size: 100%; outline: 0; padding: 0; margin: 0; border: 0; }
+
+/* SPECIAL RESET */
+ol, ul { list-style: none; }
+
+/*th,td{font-weight:normal;text-align:left;}*/
+table { border-collapse: separate; border-spacing: 0; }
+
+:focus { outline: none; }
+
+/*============================================
+=                    Base                    =
+============================================*/
+html * { max-height: 1000000px; -webkit-text-size-adjust: 100%; /*-webkit-overflow-scrolling:touch;*/ }
+
+a { color: #535353; text-decoration: none; }
+
+a, area { outline: none; hlbr: expression(this.onFocus=this.blur()); }
+
+img { vertical-align: top; }
+
+/*=============================================
+=                    base                     =
+=============================================*/
+body { font: normal 16px/18px Arial,'Microsoft JhengHei'; color: #000; background: #fff; }
+
+input, select, textarea { font: normal 16px/18px Arial, "Microsoft JhengHei"; padding: 0; margin: 0; vertical-align: middle; }
+
+a { color: #000; text-decoration: none; }
+
+/*=============================================
+=                  Structural                 =
+=============================================*/
+.ccBox { width: 100%; max-width: 1000px; margin: 0 auto; position: relative; display: block; }
+
+.header { width: 100%; height: 74px; background: #fff; }
+.header .ccBox { font-size: 0; height: 100%; }
+.header .ccBox:before { content: ""; display: inline-block; vertical-align: middle; height: 100%; width: 0; }
+.header .ccBox > * { font-size: 16px; display: inline-block; vertical-align: middle; }
+.header .logo--ctbc { width: 41px; height: 41px; margin-left: 2%; background: url(../img/logo_m.jpg?r=1503484171404) no-repeat center center; background-size: contain; position: relative; }
+
+.kv { width: 100%; height: 650px; background: url(../img/bg0.jpg?r=1503484171404) no-repeat center center; }
+.kv .ccBox { height: 100%; }
+.kv .phoneBox { position: absolute; left: 50%; bottom: 0%; width: 520px; display: inline-block; margin: 0px 0 0 -265px; z-index: 2; }
+.kv .phoneBox img { width: 100%; }
+.kv .mBox { position: relative; z-index: 1; }
+.kv .mBox img { width: 100%; }
+.kv .mBox a { display: inline-block; width: 70%; height: 0; padding-top: 14%; background: red; position: absolute; bottom: 6%; left: 50%; margin-left: -35%; opacity: 0; }
+
+.main { width: 100%; background: #f2f2f2; padding: 35px 0; }
+.main .ccBox { text-align: center; }
+.main .newBox { display: inline-block; }
+.main .newBox img { display: inline-block; vertical-align: middle; margin-right: 10px; }
+.main .newBox img:last-child { margin-right: 0; }
+.main .eachBox { display: inline-block; margin-top: 35px; width: 100%; }
+.main .eachBox img { width: 20%; margin-right: 5%; }
+.main .eachBox img:last-child { margin-right: 0; }
+
+.notice { width: 100%; background: #e6e6e6; padding: 30px 0; background-size: cover; }
+.notice .ccBox { text-align: left; }
+.notice .ccBox h5 { padding: 0 2%; line-height: 1.5em; font-size: 14px; color: #666; margin: 0; margin-top: 1em; }
+.notice .ccBox p { padding: 0 2%; line-height: 1.5em; font-size: 14px; color: #666; margin-top: 1em; }
+.notice .ccBox p span { font-weight: bold; }
+.notice .ccBox p.p_2 { color: #50beaf; font-weight: bold; }
+.notice .ccBox a { line-height: 1.5em; font-size: 14px; color: #666; }
+.notice .ccBox a.btn1 { color: #80167d; }
+.notice .ccBox small { padding: 0 2%; line-height: 1.5em; margin-top: 1em; font-size: 12px; color: #666; display: block; }
+
+@media screen and (max-width: 768px) { .header { height: 60px; }
+  .kv { height: auto; background: none; }
+  .kv .phoneBox { bottom: 24%; width: 70%; margin: 0px 0 0 -35%; }
+  .main { display: none; }
+  .notice .ccBox h5 { font-size: 25px; }
+  .notice .ccBox p { font-size: 25px; }
+  .notice .ccBox a { font-size: 25px; }
+  .notice .ccBox small { font-size: 22px; } }
+/*=============================================
+=                mobile detect                =
+=============================================*/
+.mShow { display: none; }
+
+.pcShow { display: block; }
+
+/*=============================================
+=                     RWD                     =
+=============================================*/
+@media screen and (max-width: 768px) { .mShow { display: block; }
+  .pcShow { display: none; } }
